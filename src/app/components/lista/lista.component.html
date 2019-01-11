@@ -1,0 +1,11 @@
+<mat-list fxLayoutAlign="center center" 
+  *ngFor="let user of users$ | async; let i = index" 
+  class="lista" 
+  role="list"
+>
+  <button mat-button [routerLink]="['/user',i]">
+    <mat-list-item class="item" role="listitem">
+      Username: <small> "{{user.username}}"</small>
+    </mat-list-item>
+  </button>
+</mat-list>

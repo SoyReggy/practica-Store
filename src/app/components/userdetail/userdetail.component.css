@@ -1,0 +1,36 @@
+mat-card-footer{
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-left: 34px;  
+    padding-top: 40px; 
+}
+
+mat-card-title.mat-card-title{
+    font-size: 50px;
+}
+
+mat-card-subtitle.blanco{
+    color: white;
+    text-align: center;
+}
+
+mat-card-subtitle.mat-card-subtitle{
+    font-size: 25px;
+}
+
+mat-card-content{
+    padding-left: 18px;
+    font-size: 20px;
+}
+
+/* button.mat-button{
+    /* font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 34px; */
+/* } */
+
+mat-list-item.mat-list-item{
+    padding-top: 25px;
+}
+

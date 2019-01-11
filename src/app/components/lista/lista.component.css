@@ -1,0 +1,16 @@
+.item{
+    color: white;
+}
+.lista{
+    color: red
+}
+
+mat-list{
+    background-color: gray;
+    padding-left: 20px;
+}
+
+button.mat-button:hover{
+    background-color: black;
+}
+

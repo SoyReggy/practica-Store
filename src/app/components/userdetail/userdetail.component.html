@@ -1,0 +1,24 @@
+<div fxFlex.sm="100" fxLayoutAlign="center center" fxLayout="row">
+<mat-card>
+    <mat-card-header fxLayoutAlign="center center">
+        <mat-card-subtitle class="blanco">{{user$.username}}</mat-card-subtitle>
+        <mat-card-subtitle>{{user$.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <img matCardImage src="../../../assets/images/user1.png">
+    <mat-card-content>
+        Phone: {{user$.phone}}
+        <br>
+        Email: {{user$.email}}
+        <br>
+        Website: {{user$.website}}
+    </mat-card-content>
+    <mat-card-subtitle fxLayoutAlign="center center">Posts</mat-card-subtitle>
+    <mat-list fxLayoutAlign="center center" role="list" *ngFor="let post of post;let i = index;">
+        <mat-list-item role="listitem">Post #{{post.id}} <br>{{post.title}} <br></mat-list-item>
+        <button [routerLink]="['/post',i]" mat-button>Ver más...</button>
+    </mat-list>
+    <mat-card-footer>
+        Social-App 2019
+    </mat-card-footer>
+</mat-card>
+</div>
